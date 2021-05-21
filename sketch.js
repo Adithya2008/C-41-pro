@@ -28,12 +28,12 @@ function setup(){
 
     createCanvas(400,700);
 
-    man = createSprite(200,400,10,10)
+    man = createSprite(200,600,10,10)
     man.addAnimation("MAN",walking)
     man.scale=0.3
 
 
-    umbrella = new Umbrella(200,358);
+    umbrella = new Umbrella(200,550);
     if(frameCount % 150 === 0){
 
         for(var i=0; i<maxDrops; i++){
@@ -78,4 +78,5 @@ function draw(){
 
     drawSprites();
 }   
+
 
